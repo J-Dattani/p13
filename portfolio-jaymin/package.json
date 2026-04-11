@@ -1,0 +1,17 @@
+{
+  "name": "portfolio-jaymin",
+  "version": "1.0.0",
+  "description": "Jaymin Dattani Portfolio",
+  "scripts": {
+    "install:frontend": "cd frontend && npm install",
+    "install:api": "cd api && npm install",
+    "install:all": "npm run install:frontend && npm run install:api",
+    "build": "cd frontend && npm run build",
+    "start:frontend": "cd frontend && npm start",
+    "start:api": "cd api && node index.js",
+    "dev": "npm run install:all && concurrently \"npm run start:api\" \"npm run start:frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

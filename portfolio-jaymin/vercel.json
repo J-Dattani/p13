@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "buildCommand": "cd frontend && npm install && npm run build",
+  "outputDirectory": "frontend/build",
+  "framework": "create-react-app",
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/index.js" }
+  ],
+  "env": {
+    "MONGODB_URI": "mongodb+srv://jaymindattani141327_db_user:pixelpass123@pixelpass.pm2xuou.mongodb.net/portfolio?retryWrites=true&w=majority&appName=PixelPass"
+  }
+}
